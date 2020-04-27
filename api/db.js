@@ -5,7 +5,7 @@ require('dotenv').config();
 let db;
 
 async function connectToDb() {
-  const url = process.env.DB_URL || 'mongodb+srv://romilshah98:3xZhm2IZ68DjfWIb@freecluster-o9vik.mongodb.net/producttracker?retryWrites=true';
+  const url = process.env.DB_URL || 'mongodb+srv://yashpshah:yash9997@cluster0-tnmog.mongodb.net/Inventory_Management?retryWrites=true&w=majority';
   const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
   await client.connect();
   console.log('Connected to MongoDB at', url);
